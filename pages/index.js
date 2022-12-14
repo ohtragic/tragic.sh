@@ -15,7 +15,7 @@ const Page = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true);
-        }, 0);
+        }, 250);
     }, []);
 
     useEffect(() => {
