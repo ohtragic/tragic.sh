@@ -26,7 +26,7 @@ const Page = () => {
         }, 0);
     }, []);
 
-    const delayDict = {
+    const delay = {
         " ": 100,
         ",": 125,
         ".": 125,
@@ -41,7 +41,7 @@ const Page = () => {
                         setText(
                             texts[currentText].substring(0, text.length + 1)
                         );
-                    }, delayDict[texts[currentText][text.length]] || 75);
+                    }, delay[texts[currentText][text.length]] || 75);
                 } else {
                     setTimeout(() => {
                         setTyping(false);
