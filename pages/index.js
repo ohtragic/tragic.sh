@@ -12,28 +12,27 @@ const Page = () => {
     const [currentText, setCurrentText] = useState(0);
     const [typing, setTyping] = useState(true);
 
-    const texts = [
-        "18-year-old student, living in the UK.",
-        "Blockchain & Cryptocurrency Enthusiast.",
-        "Computer-science & Mathematics Tutor.",
-        "Offering personalized service ads for maximum marketing impact.",
-        "Revolutionizing Cryptocurrency payments at hyzen.io",
-    ];
-
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true);
         }, 0);
     }, []);
 
-    const delay = {
-        " ": 100,
-        ",": 125,
-        ".": 125,
-        "!": 125,
-    };
-
     useEffect(() => {
+        const texts = [
+            "18-year-old student, living in the UK.",
+            "Blockchain & Cryptocurrency Enthusiast.",
+            "Computer-science & Mathematics Tutor.",
+            "Offering personalized service ads for maximum marketing impact.",
+        ];
+
+        const delay = {
+            " ": 100,
+            ",": 125,
+            ".": 125,
+            "!": 125,
+        };
+
         if (typing) {
             if (currentText < texts.length) {
                 if (text.length < texts[currentText].length) {
@@ -182,7 +181,7 @@ const Page = () => {
                 `}
             </style>
             <Head>
-                <title>tragic.sh - Tragic's Portal</title>
+                <title>tragic.sh - Tragic&apos;s Portal</title>
             </Head>
             <div id="app" className="app">
                 <div className="top">
@@ -216,7 +215,7 @@ const Page = () => {
                         textAlign: "center",
                     }}
                 >
-                    Here's the best places to contact me 👇
+                    Here&apos;s the best places to contact me 👇
                 </h2>
                 <div className="socials">
                     <div className="social">
@@ -299,6 +298,7 @@ const Page = () => {
                                 className="link"
                                 href="https://t.me/ohtragic"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 t.me/ohtragic
                             </a>
